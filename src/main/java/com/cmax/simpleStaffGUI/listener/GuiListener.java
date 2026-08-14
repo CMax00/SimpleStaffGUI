@@ -360,7 +360,7 @@ public final class GuiListener implements Listener {
 
         switch (slot) {
 
-            case 9 -> {
+            case 10 -> {
 
                 if (!player.hasPermission(
                         "SimpleStaffGUI.mute"
@@ -381,7 +381,7 @@ public final class GuiListener implements Listener {
                 );
             }
 
-            case 11 -> {
+            case 12 -> {
 
                 if (!player.hasPermission(
                         "SimpleStaffGUI.tempmute"
@@ -402,7 +402,7 @@ public final class GuiListener implements Listener {
                 );
             }
 
-            case 13 -> {
+            case 14 -> {
 
                 if (!player.hasPermission(
                         "SimpleStaffGUI.unmute"
@@ -423,7 +423,7 @@ public final class GuiListener implements Listener {
                 );
             }
 
-            case 15 -> {
+            case 16 -> {
 
                 if (!player.hasPermission(
                         "SimpleStaffGUI.mutelist"
@@ -742,7 +742,7 @@ public final class GuiListener implements Listener {
 
         for (int i = 0; i < durations.size() && i < 5; i++) {
 
-            if (slot == 10 + (i * 2)) {
+            if (slot == 9 + (i * 2)) {
                 return durations.get(i);
             }
         }
