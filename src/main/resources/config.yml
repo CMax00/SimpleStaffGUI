@@ -1,0 +1,77 @@
+database:
+  file: simplestaffgui.db
+
+gui:
+  main:
+    title: "<dark_gray>Staff Panel"
+
+  ban:
+    title: "<dark_gray>Ban Management"
+
+  chat:
+    title: "<dark_gray>Chat Management"
+
+  warning:
+    title: "<dark_gray>Warning Management"
+
+  duration:
+    title: "<dark_gray>Select Duration"
+
+icons:
+
+  ban:
+    id: "judge_gavel_icon"
+
+  tempban:
+    id: "hourglass_icon"
+
+  unban:
+    id: "essential_icons_yes"
+
+  banned_players:
+    id: "skull_icon"
+
+  mute:
+    id: "essential_icons_dialogue"
+
+  unmute:
+    id: "essential_icons_yes"
+
+  tempmute:
+    id: "hourglass_icon"
+
+  muted_players:
+    id: "essential_icons_lock"
+
+  warning:
+    id: "essential_icons_exclamation"
+
+  warning_history:
+    id: "magnifying_glass_icon"
+
+  close:
+    id: "essential_icons_no"
+
+  back:
+    id: "essential_icons_no"
+
+  confirm:
+    id: "essential_icons_yes"
+
+  cancel:
+    id: "essential_icons_no"
+
+durations:
+  tempban:
+    - "1h"
+    - "1d"
+    - "7d"
+    - "14d"
+    - "30d"
+
+  tempmute:
+    - "1h"
+    - "1d"
+    - "7d"
+    - "14d"
+    - "30d"

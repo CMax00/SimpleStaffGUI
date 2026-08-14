@@ -1,0 +1,61 @@
+name: SimpleStaffGUI
+version: '${version}'
+
+main: com.cmax.simpleStaffGUI.SimpleStaffGUI
+api-version: '1.21.11'
+load: POSTWORLD
+
+
+depend:
+  - Nexo
+
+commands:
+  staff:
+    description: Opens the staff moderation menu.
+    usage: /staff
+    permission: simplestaffgui.use
+
+permissions:
+  simplestaffgui.use:
+    description: Allows the player to use the staff GUI.
+    default: op
+
+  simplestaffgui.ban:
+    description: Allows permanent bans.
+    default: op
+
+  simplestaffgui.tempban:
+    description: Allows temporary bans.
+    default: op
+
+  simplestaffgui.unban:
+    description: Allows unbanning players.
+    default: op
+
+  simplestaffgui.banlist:
+    description: Allows viewing banned players.
+    default: op
+
+  simplestaffgui.mute:
+    description: Allows permanent mutes.
+    default: op
+
+  simplestaffgui.tempmute:
+    description: Allows temporary mutes.
+    default: op
+
+  simplestaffgui.unmute:
+    description: Allows unmuting players.
+    default: op
+
+  simplestaffgui.mutelist:
+    description: Allows viewing muted players.
+    default: op
+
+  simplestaffgui.warn:
+    description: Allows issuing warnings.
+    default: op
+
+  simplestaffgui.warnings:
+    description: Allows viewing warning history.
+    default: op

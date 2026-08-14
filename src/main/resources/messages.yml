@@ -1,0 +1,70 @@
+prefix: "<gray>[<gold>SimpleStaffGUI</gold>]</gray> "
+
+input:
+  player: "<yellow>Enter the player name in chat.</yellow> <gray>Type <red>cancel</red> to abort.</gray>"
+  warning_reason: "<yellow>Enter the warning reason in chat.</yellow> <gray>Type <red>cancel</red> to abort.</gray>"
+
+confirmation:
+  ban: "<yellow>Confirm banning <white>%player%</white>.</yellow>"
+  tempban: "<yellow>Confirm temporarily banning <white>%player%</white> for <white>%duration%</white>.</yellow>"
+  unban: "<yellow>Confirm unbanning <white>%player%</white>.</yellow>"
+  mute: "<yellow>Confirm muting <white>%player%</white>.</yellow>"
+  tempmute: "<yellow>Confirm temporarily muting <white>%player%</white> for <white>%duration%</white>.</yellow>"
+  unmute: "<yellow>Confirm unmuting <white>%player%</white>.</yellow>"
+  warning: "<yellow>Confirm warning <white>%player%</white>.</yellow>"
+
+success:
+  ban: "<green>%player% has been permanently banned.</green>"
+  tempban: "<green>%player% has been banned for %duration%.</green>"
+  unban: "<green>%player% has been unbanned.</green>"
+
+  mute: "<green>%player% has been permanently muted.</green>"
+  tempmute: "<green>%player% has been muted for %duration%.</green>"
+  unmute: "<green>%player% has been unmuted.</green>"
+
+  warning: "<green>Warning issued to %player%.</green>"
+
+error:
+  cancelled: "<gray>Action cancelled.</gray>"
+  no_permission: "<red>You do not have permission to perform this action.</red>"
+  player_not_found: "<red>Player not found.</red>"
+
+  already_banned: "<red>That player is already banned.</red>"
+  not_banned: "<red>That player is not banned.</red>"
+
+  already_muted: "<red>That player is already muted.</red>"
+  not_muted: "<red>That player is not muted.</red>"
+
+  database: "<red>A database error occurred.</red>"
+  invalid_duration: "<red>Invalid duration.</red>"
+
+  player_only: "<red>This command can only be used by a player.</red>"
+
+warning:
+  received:
+    - "<red><bold>WARNING</bold></red>"
+    - ""
+    - "<gray>You have received a warning.</gray>"
+    - ""
+    - "<yellow>Reason:</yellow> <white>%reason%</white>"
+
+  history_header: "<gold>Warning history for <white>%player%</white></gold>"
+
+  history_entry: "<gray>#%id% <dark_gray>|</dark_gray> <white>%reason%</white> <dark_gray>|</dark_gray> Moderator: <yellow>%moderator%</yellow> <dark_gray>|</dark_gray> <white>%date%</white>"
+
+  no_history: "<gray>%player% has no warnings.</gray>"
+
+lists:
+  banned:
+    header: "<gold>Banned Players</gold>"
+    empty: "<gray>There are no currently banned players.</gray>"
+    entry: "<gray>- <white>%player%</white> <dark_gray>|</dark_gray> %remaining%</gray>"
+
+  muted:
+    header: "<gold>Muted Players</gold>"
+    empty: "<gray>There are no currently muted players.</gray>"
+    entry: "<gray>- <white>%player%</white> <dark_gray>|</dark_gray> %remaining%</gray>"
+
+player:
+  muted: "<red>You are currently muted.</red>"
+  ban_message: "<red>You are banned from this server.</red>"
